@@ -1,0 +1,7 @@
+
+Since SIM800L module doesn’t come with onboard voltage regulator, an external power supply adjusted to voltage between 3.4V to 4.4V (Ideal 4.1V) is required. 
+The power supply should also be able to source 2A of surge current, otherwise the module will keep shutting down.
+
+Any 2A-rated DC-DC buck converter like LM2596 would work.
+The LM2596S can provide a maximum 3 A to its load. 
+You simply use a higher voltage in its input then adjust the on-board potentiometer to have 3.7 to 4.4 V for the SIM800L
